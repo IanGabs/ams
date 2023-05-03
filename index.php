@@ -10,7 +10,7 @@ $app = AppFactory::create();
 
 $app->get('/', function (Request $request, Response $response, $args) {
     $aula = new Aula();
-    echo $aula->extrairInformacoes();
+    echo $aula->extrairDados();
     return $response;
 });
 $app->setBasePath('/ams/ams');
